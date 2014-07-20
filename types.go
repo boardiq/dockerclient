@@ -42,7 +42,7 @@ type HostConfig struct {
 
 type PortBinding struct {
 	HostIp   string
-	HostPort string
+	HostPort string `json:",omitempty"`
 }
 
 type ContainerInfo struct {
